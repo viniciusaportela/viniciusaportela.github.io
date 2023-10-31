@@ -5,10 +5,13 @@ export interface Translation {
   ["address"]: string;
   ["phone"]: string;
   ["start-date"]: string;
+  ["tem-statement-one"]: string;
+  ["tem-statement-two"]: string;
   ["regera-statement-one"]: string;
   ["regera-statement-two"]: string;
   ["regera-statement-three"]: string;
   ["skills"]: string;
+  ["soft-skills"]: string;
   ["rankmyapp-statement-one"]: string;
   ["rankmyapp-statement-two"]: string;
   ["rankmyapp-statement-three"]: string;
@@ -16,7 +19,7 @@ export interface Translation {
   ["adireto-statement-two"]: string;
   ["adireto-statement-three"]: string;
   ["freelancer-statement-one"]: string;
-  ["freelance-statement-two"]: string;
+  ["freelancer-statement-two"]: string;
   ["projects"]: string;
   ["smortech-description"]: string;
   ["super-massagens-description"]: string;
