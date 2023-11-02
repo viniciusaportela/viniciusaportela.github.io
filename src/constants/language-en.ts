@@ -20,19 +20,19 @@ const translation: Translation = {
   ["soft-skills"]:
     "Adaptability, Zeal for quality, Fast Learner, Critical Thinking",
   ["rankmyapp-statement-one"]:
-    "Development of microservices with RabbitMQ to process raw data from programatic midia APIs (Appsflyer, Trackier and Adjust).",
+    "Development of microservices with RabbitMQ to process raw data from programatic midia APIs (Appsflyer, Trackier and Adjust)",
   ["rankmyapp-statement-two"]:
-    "Refactoring which resulted in 3x less time to process million of events monthly.",
+    "Refactoring which resulted in 3x less time to process million of events monthly",
   ["rankmyapp-statement-three"]:
-    "Help in projecting a new version of a service while maintaining retrocompatibility with the old API.",
+    "Help in projecting a new version of a service while maintaining retrocompatibility with the old API",
   ["adireto-statement-one"]:
-    "Development of a game with javascript and html. This game was integrated in a cryptocurrency website that we're developing, the website used the web3 library.",
+    "Development of a game with javascript and html. This game was integrated in a cryptocurrency website that we're developing, the website used the web3 library",
   ["adireto-statement-two"]:
-    "Construction of a microservice which manages and publishes websites on Cloudflare Workers.",
+    "Construction of a microservice which manages and publishes websites on Cloudflare Workers",
   ["adireto-statement-three"]:
-    "I Build a scraper responsible for collecting and downloading data from our client websites and them inserting then in a more optimized website.",
+    "I Build a scraper responsible for collecting and downloading data from our client websites and them inserting then in a more optimized website",
   ["freelancer-statement-one"]:
-    "Communication, requirements gathering, creation of wireframes and design of screens together with clients.",
+    "Communication, requirements gathering, creation of wireframes and design of screens together with clients",
   ["freelancer-statement-two"]:
     "Development of a web scraper (puppeteer), a desktop app (with Electron), mobile apps (with React Native), a landpage, webpages. I also developed the backend (Node.js) and structured the database (PostgreSQL) of these apps.",
   ["projects"]: "Independent Projects",
@@ -52,6 +52,8 @@ const translation: Translation = {
   ["course-three"]: "Dive into Refactoring",
   ["course-four"]: "AWS Cloud Practitioner Essentials (Course)",
   ["course-five"]: "Serverless Applications in AWS (Erick Wendel)",
+  ["footer"]:
+    "This curriculum was made with ReactJS/Tailwind. Code available at:",
 };
 
 export default translation;

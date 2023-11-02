@@ -1,41 +1,41 @@
-import { ComponentType } from "react";
-import { Translatable } from "../Translatable/Translatable";
-import { Translation } from "../../@types/translation";
+import React, { ComponentType, PropsWithChildren } from "react";
 import clsx from "clsx";
 
-interface ProfileDataProps {
-  icon: ComponentType<{ size?: string | number }>;
-  children: string;
-  translatable?: boolean;
+export interface TextWithIconProps extends PropsWithChildren {
+  icon: ComponentType<{ size?: string | number; className?: string }>;
   className?: string;
   size?: "sm" | "lg";
+  link?: string;
 }
 
-export const TextWithIcon: React.FC<ProfileDataProps> = ({
+export const TextWithIcon: React.FC<TextWithIconProps> = ({
   icon,
   children,
-  translatable,
   className,
+  link,
   size = "sm",
 }) => {
   const Icon = icon;
 
   const textClassname = clsx(
-    "ml-2 whitespace-nowrap",
+    "ml-2",
     size === "sm" && "text-sm",
     size === "lg" && "text-xl font-bold",
   );
 
   return (
     <div className={clsx(["flex items-center", className])}>
-      <Icon size={size === "sm" ? 20 : 30} />
-      {translatable ? (
-        <Translatable
-          className={textClassname}
-          value={children as keyof Translation}
-        />
-      ) : (
-        <span className={textClassname}>{children}</span>
+      <Icon
+        size={size === "sm" ? 20 : 30}
+        className={clsx("shrink-0", {
+          "w-[20px] h-[20px]": size === "sm",
+          "w-[30px] h-[30px]": size === "lg",
+        })}
+      />
+      {React.createElement(
+        link ? "a" : "span",
+        { className: textClassname, href: link },
+        children,
       )}
     </div>
   );

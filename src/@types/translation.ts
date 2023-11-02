@@ -35,4 +35,5 @@ export interface Translation {
   ["course-three"]: string;
   ["course-four"]: string;
   ["course-five"]: string;
+  ["footer"]: string;
 }

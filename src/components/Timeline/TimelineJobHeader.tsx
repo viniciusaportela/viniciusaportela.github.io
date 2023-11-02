@@ -7,7 +7,7 @@ interface TimelineHeaderProps {
   startDate: Date;
 }
 
-export const TimelineHeader: React.FC<TimelineHeaderProps> = ({
+export const TimelineJobHeader: React.FC<TimelineHeaderProps> = ({
   name,
   startDate,
 }) => {

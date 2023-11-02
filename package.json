@@ -2,7 +2,6 @@
   "name": "curriculum",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://viniciusaportela.github.io/curriculum",
   "dependencies": {
     "@phosphor-icons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.17.0",

@@ -3,15 +3,18 @@ import enJson from "../../constants/language-en";
 import ptJson from "../../constants/language-pt";
 import { useLanguage } from "../../context/LanguageContext";
 import { Translation } from "../../@types/translation";
+import { HTMLTag } from "../../@types/html-tag";
 
 interface TranslatableProps {
   value: keyof Translation;
   className?: string;
+  component?: HTMLTag;
 }
 
 export const Translatable: React.FC<TranslatableProps> = ({
   value,
   className,
+  component,
 }) => {
   const { language } = useLanguage();
 
@@ -30,5 +33,9 @@ export const Translatable: React.FC<TranslatableProps> = ({
     return getTranslatedValue(value) ?? value;
   };
 
-  return <span className={className}>{getTranslation(value)}</span>;
+  return React.createElement(
+    component ?? "span",
+    { className },
+    getTranslation(value),
+  );
 };
