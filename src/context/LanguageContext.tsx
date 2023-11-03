@@ -6,7 +6,7 @@ import {
   useState,
 } from "react";
 
-enum Language {
+export enum Language {
   PT = "pt",
   EN = "en",
 }

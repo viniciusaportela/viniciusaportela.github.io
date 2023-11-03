@@ -23,7 +23,7 @@ export const CurriculumHeader = () => {
         <span>Sênior FullStack Software Engineer</span>
         <Translatable className="text-sm" value="address" />
       </div>
-      <div className="mt-auto grid grid-cols-1 sm:grid-cols-2 pt-3 col-span-2 md:col-span-1 ml-0 md:ml-4">
+      <div className="mt-auto grid grid-cols-1 sm:grid-cols-[0.8fr_1fr] pt-3 col-span-2 md:col-span-1 ml-0 md:ml-4">
         <div>
           <TextWithIcon
             icon={GithubLogo}

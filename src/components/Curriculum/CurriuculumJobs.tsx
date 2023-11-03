@@ -8,6 +8,7 @@ import { Briefcase } from "@phosphor-icons/react";
 import { TextWithIcon } from "../TextWithIcon/TextWithIcon";
 import { Translatable } from "../Translatable/Translatable";
 import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIcon";
+import { TimelineJobSkills } from "../Timeline/TimelineJobSkills";
 
 export const CurriculumJobs = () => {
   return (
@@ -26,6 +27,10 @@ export const CurriculumJobs = () => {
           />
           <Translatable value="tem-statement-one" component="li" />
           <Translatable value="tem-statement-two" component="li" />
+          <TimelineJobSkills>
+            React, React Native Web, Typescript, Tailwind, Styled Components,
+            Jest
+          </TimelineJobSkills>
         </TimelineItem>
         <TimelineItem>
           <TimelineJobHeader
@@ -35,6 +40,10 @@ export const CurriculumJobs = () => {
           <Translatable value="regera-statement-one" component="li" />
           <Translatable value="regera-statement-two" component="li" />
           <Translatable value="regera-statement-three" component="li" />
+          <TimelineJobSkills>
+            NestJS, AWS (Lambda, S3, CloudWatch, SQS, SNS), Typescript, Node.js,
+            MongoDB
+          </TimelineJobSkills>
         </TimelineItem>
         <TimelineItem>
           <TimelineJobHeader
@@ -44,6 +53,10 @@ export const CurriculumJobs = () => {
           <Translatable value="rankmyapp-statement-one" component="li" />
           <Translatable value="rankmyapp-statement-two" component="li" />
           <Translatable value="rankmyapp-statement-three" component="li" />
+          <TimelineJobSkills>
+            NestJS, Microservices, RabbitMQ, AntD, React, NodeJS, Python,
+            Docker, MongoDB, MySQL, Redux
+          </TimelineJobSkills>
         </TimelineItem>
         <TimelineItem>
           <TimelineJobHeader
@@ -53,6 +66,10 @@ export const CurriculumJobs = () => {
           <Translatable value="adireto-statement-one" component="li" />
           <Translatable value="adireto-statement-two" component="li" />
           <Translatable value="adireto-statement-three" component="li" />
+          <TimelineJobSkills>
+            React, Nest.js, GraphQL, Microservices, Cloudflare Workers,
+            Typescript, Node.js, Git, MaterialUI
+          </TimelineJobSkills>
         </TimelineItem>
         <TimelineItem>
           <TimelineJobHeader
@@ -61,6 +78,10 @@ export const CurriculumJobs = () => {
           />
           <Translatable value="freelancer-statement-one" component="li" />
           <Translatable value="freelancer-statement-two" component="li" />
+          <TimelineJobSkills>
+            Node.js, PostgreSQL, React, React Native, Next.js, Digital Ocean,
+            Puppeeteer, Electron.js
+          </TimelineJobSkills>
         </TimelineItem>
       </Timeline>
     </section>

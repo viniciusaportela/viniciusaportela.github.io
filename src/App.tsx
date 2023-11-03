@@ -8,7 +8,8 @@ import { CurriculumSoftSkills } from "./components/Curriculum/CurriculumSoftSkil
 import { CurriculumCourses } from "./components/Curriculum/CurriculumCourses";
 import { CurriculumEducation } from "./components/Curriculum/CurriculumEducation";
 import { useQueryParam } from "./hooks/useQueryParam";
-import { useLanguage } from "./context/LanguageContext";
+import { Language, useLanguage } from "./context/LanguageContext";
+import { LanguageSwitch } from "./components/LanguageSwitch/LanguageSwitch";
 
 function App() {
   const { setLanguage } = useLanguage();
@@ -16,17 +17,22 @@ function App() {
 
   useLayoutEffect(() => {
     if (langParam) {
-      setLanguage(langParam as "pt" | "en");
+      setLanguage(langParam as Language);
     }
   }, [langParam]);
 
   return (
     <div className="flex flex-col items-center relative">
       <div className="w-full bg-gray-900 h-[160px] absolute top-0 -z-10"></div>
-      <Translatable
-        className="font-parisienne text-gray-400 text-2xl my-8 mx-auto"
-        value="curriculum"
-      />
+
+      <div className="relative max-w-[880px] flex items-center w-[96%]">
+        <LanguageSwitch className="absolute right-0 top-3" />
+        <Translatable
+          className="font-parisienne text-gray-400 text-2xl my-8 mx-auto"
+          value="curriculum"
+        />
+      </div>
+
       <div className="bg-white rounded-lg w-[96%] max-w-[880px] shadow-lg mb-4 md:mb-12">
         <CurriculumHeader />
         <div className="w-full h-[1px] bg-gray-100"></div>
