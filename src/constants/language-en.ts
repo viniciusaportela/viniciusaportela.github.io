@@ -1,7 +1,7 @@
 import { Translation } from "../@types/translation";
 
 const translation: Translation = {
-  ["curriculum"]: "Curriculum",
+  ["curriculum"]: "Resume",
   ["linkedin"]: "https://www.linkedin.com/in/vinicius-portela/?locale=en_US",
   ["professional-experience"]: "Professional Experience",
   ["address"]: "Florianópolis - Santa Catarina - Brazil",
