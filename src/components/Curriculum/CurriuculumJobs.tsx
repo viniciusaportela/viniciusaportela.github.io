@@ -80,7 +80,7 @@ export const CurriculumJobs = () => {
           <Translatable value="freelancer-statement-two" component="li" />
           <TimelineJobSkills>
             Node.js, PostgreSQL, React, React Native, Next.js, Digital Ocean,
-            Puppeeteer, Electron.js
+            Puppeeteer, Electron.js, Firebase
           </TimelineJobSkills>
         </TimelineItem>
       </Timeline>
