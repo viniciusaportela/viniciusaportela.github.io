@@ -1,16 +1,30 @@
 import { TimelineItem } from "../Timeline/TimelineItem";
 import { TimelineJobHeader } from "../Timeline/TimelineJobHeader";
 import { Month } from "../../@types/month";
-import { TranslatableTimelineStatement } from "../Timeline/TranslatableTimelineStatement";
 import { Timeline } from "../Timeline/Timeline";
 import React from "react";
 import { Briefcase } from "@phosphor-icons/react";
-import { TextWithIcon } from "../TextWithIcon/TextWithIcon";
 import { Translatable } from "../Translatable/Translatable";
 import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIcon";
 import { TimelineJobSkills } from "../Timeline/TimelineJobSkills";
+import { jobs } from "../../constants/jobs";
 
 export const CurriculumJobs = () => {
+  const calculateJobTime = () => {
+    const months = jobs.reduce((sum, job) => {
+      const startDate = job.from;
+      const endDate = job.to ?? new Date();
+
+      const diffTime = Math.abs(endDate.getTime() - startDate.getTime());
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      const diffMonths = Math.ceil(diffDays / 30);
+
+      return sum + diffMonths;
+    }, 0);
+
+    return `${(months / 12).toFixed(1)} `;
+  };
+
   return (
     <section>
       <TranslatableTextWithIcon
@@ -19,6 +33,10 @@ export const CurriculumJobs = () => {
         className="mb-3"
         value="professional-experience"
       />
+      <i className="flex -mt-4 mb-3 gap-1 ml-9">
+        {calculateJobTime()}{" "}
+        <Translatable value="experience-time" component="i" />
+      </i>
       <Timeline>
         <TimelineItem>
           <TimelineJobHeader

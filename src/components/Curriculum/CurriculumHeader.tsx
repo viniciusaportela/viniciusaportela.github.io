@@ -20,7 +20,7 @@ export const CurriculumHeader = () => {
       />
       <div className="flex flex-1 flex-col ml-4">
         <span className="text-2xl font-bold">Vinícius de Araújo Portela</span>
-        <span>Sênior FullStack Software Engineer</span>
+        <Translatable value="professional-level" />
         <Translatable className="text-sm" value="address" />
       </div>
       <div className="mt-auto grid grid-cols-1 sm:grid-cols-[0.8fr_1fr] pt-3 col-span-2 md:col-span-1 ml-0 md:ml-4">

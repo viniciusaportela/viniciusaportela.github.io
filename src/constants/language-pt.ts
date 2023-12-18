@@ -55,6 +55,8 @@ const translation: Translation = {
   ["course-five"]: "Aplicações Serverless na AWS (Erick Wendel)",
   ["footer"]:
     "Currículo desenvolvido em ReactJS/Tailwind. Código disponível em:",
+  ["professional-level"]: "Sênior FullStack Software Engineer",
+  ["experience-time"]: "Anos de experiência",
 };
 
 export default translation;

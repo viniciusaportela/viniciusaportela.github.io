@@ -36,4 +36,6 @@ export interface Translation {
   ["course-four"]: string;
   ["course-five"]: string;
   ["footer"]: string;
+  ["professional-level"]: string;
+  ["experience-time"]: string;
 }

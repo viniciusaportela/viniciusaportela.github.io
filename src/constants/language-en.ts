@@ -43,8 +43,8 @@ const translation: Translation = {
   ["knowledge"]: "Knowledge",
   ["education"]: "Education",
   ["level"]: "Level",
-  ["education-one"]: "Bachelor of Information Systems",
-  ["education-two"]: "IT Technician",
+  ["education-one"]: "IT Technician",
+  ["education-two"]: "Bachelor of Information Systems",
   ["in-progress"]: "in progress",
   ["courses"]: "Courses",
   ["course-one"]: "Advanced English II - Senac (200h)",
@@ -54,6 +54,8 @@ const translation: Translation = {
   ["course-five"]: "Serverless Applications in AWS (Erick Wendel)",
   ["footer"]:
     "This curriculum was made with ReactJS/Tailwind. Code available at:",
+  ["professional-level"]: "Mid-Level FullStack Software Engineer",
+  ["experience-time"]: "Years of experience",
 };
 
 export default translation;
