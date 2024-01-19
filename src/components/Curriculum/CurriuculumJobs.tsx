@@ -34,7 +34,7 @@ export const CurriculumJobs = () => {
         value="professional-experience"
       />
       <i className="flex -mt-4 mb-3 gap-1 ml-9">
-        {calculateJobTime()}{" "}
+        {"4 "}
         <Translatable value="experience-time" component="i" />
       </i>
       <Timeline>
