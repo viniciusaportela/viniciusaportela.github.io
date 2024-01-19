@@ -8,9 +8,9 @@ const translation: Translation = {
   ["phone"]: "(48) 98866-4056",
   ["start-date"]: "Data",
   ["tem-statement-one"]:
-    "Rebranding de aplicativo React Native seguindo Design no Figma",
+    "Rebranding de aplicativo React Native Web seguindo Design no Figma",
   ["tem-statement-two"]:
-    "Desenvolvimento de aplicativo com React Native Web (IOS, Android, Web)",
+    "Desenvolvimento de Design System usando Styled Components",
   ["regera-statement-one"]:
     "Manutenção de serviços usando o Serverless Framework",
   ["regera-statement-two"]:

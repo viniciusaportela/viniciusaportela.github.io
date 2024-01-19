@@ -7,9 +7,9 @@ const translation: Translation = {
   ["address"]: "Florianópolis - Santa Catarina - Brazil",
   ["phone"]: "+55 (48) 98866-4056",
   ["start-date"]: "Start date",
-  ["tem-statement-one"]: "React Native rebranding following Figma Design",
+  ["tem-statement-one"]: "React Native Web rebranding following Figma Design",
   ["tem-statement-two"]:
-    "Development of an app with React Native Web (IOS, Android, Web)",
+    "Development of a Design System using Styled Components",
   ["regera-statement-one"]:
     "Maintenance of services using Serverless Framework",
   ["regera-statement-two"]:
