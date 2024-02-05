@@ -1,17 +1,13 @@
 import { Star } from "@phosphor-icons/react";
 import React from "react";
 import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIcon";
+import { Translatable } from "../Translatable/Translatable";
 
 export const CurriculumKnowledge = () => {
   return (
-    <section>
-      <TranslatableTextWithIcon
-        icon={Star}
-        size="lg"
-        className="mb-3 mt-7"
-        value="knowledge"
-      />
-      <div className="flex flex-row">
+    <section className="mt-7">
+      <Translatable className="text-2xl font-bold" value="knowledge" />
+      <div className="flex flex-row mt-1">
         <div className="flex-1 mr-2">
           <h3 className="font-bold text-lg">Front</h3>
           <div className="grid grid-cols-1 md:grid-cols-2">

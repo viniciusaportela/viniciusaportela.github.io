@@ -6,7 +6,7 @@ const translation: Translation = {
   ["professional-experience"]: "Experiência Profissional",
   ["address"]: "Florianópolis - Santa Catarina",
   ["phone"]: "(48) 98866-4056",
-  ["start-date"]: "Data",
+  ["start-date"]: "Data de início",
   ["tem-statement-one"]:
     "Rebranding de aplicativo React Native Web seguindo Design no Figma",
   ["tem-statement-two"]:
@@ -48,11 +48,11 @@ const translation: Translation = {
   ["education-two"]: "Bacharelado em Sistemas da Informação",
   ["in-progress"]: "em andamento",
   ["courses"]: "Cursos",
-  ["course-one"]: "Inglês Avançado II - Senac",
-  ["course-two"]: "Javascript Expert",
+  ["course-one"]: "Inglês Avançado II - Senac (200h)",
+  ["course-two"]: "Javascript Expert (80h)",
   ["course-three"]: "Dive into Refactoring",
-  ["course-four"]: "AWS Cloud Practitioner Essentials (Curso)",
-  ["course-five"]: "Aplicações Serverless na AWS (Erick Wendel)",
+  ["course-four"]: "AWS Cloud Practitioner Essentials",
+  ["course-five"]: "Aplicações Serverless na AWS (14h)",
   ["footer"]:
     "Currículo desenvolvido em ReactJS/Tailwind. Código disponível em:",
   ["professional-level"]: "Sênior FullStack Software Engineer",

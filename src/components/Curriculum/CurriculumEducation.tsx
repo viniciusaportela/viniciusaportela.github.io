@@ -8,27 +8,20 @@ import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIc
 
 export const CurriculumEducation = () => {
   return (
-    <section>
-      <TranslatableTextWithIcon
-        icon={GraduationCap}
-        size="lg"
-        className="mb-3 mt-7"
-        value="education"
-      />
-      <Timeline>
+    <section className="mt-7">
+      <Translatable className="text-2xl font-bold" value="education" />
+      <Timeline className="mt-3">
         <TimelineItem>
           <span>
             <Translatable value="level" />:{" "}
-            <Translatable value="education-two" component="strong" /> -
-            Universidade Federal de Santa Catarina (
+            <Translatable value="education-two" component="strong" /> - UFSC (
             <Translatable value="in-progress" />)
           </span>
         </TimelineItem>
         <TimelineItem>
           <span>
             <Translatable value="level" />:{" "}
-            <Translatable value="education-one" component="strong" /> -
-            Instituto Federal de Ciência e Tecnologia do Pará
+            <Translatable value="education-one" component="strong" /> - IFPA
           </span>
         </TimelineItem>
       </Timeline>

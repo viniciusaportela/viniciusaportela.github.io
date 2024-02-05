@@ -40,9 +40,9 @@ function App() {
           <CurriculumJobs />
           <CurriculumProjects />
           <CurriculumKnowledge />
-          <CurriculumSoftSkills />
           <CurriculumCourses />
           <CurriculumEducation />
+          <CurriculumSoftSkills />
         </main>
         <footer className="p-4 bg-gray-100">
           <Translatable value="footer" />{" "}

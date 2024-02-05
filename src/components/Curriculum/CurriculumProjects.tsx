@@ -6,14 +6,9 @@ import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIc
 
 export const CurriculumProjects = () => {
   return (
-    <section>
-      <TranslatableTextWithIcon
-        icon={RocketLaunch}
-        size="lg"
-        className="mb-3 mt-7"
-        value="projects"
-      />
-      <article>
+    <section className="mt-7">
+      <Translatable className="text-2xl font-bold" value="projects" />
+      <article className="mt-1">
         <h2 className="text-lg font-bold">Smortech</h2>
         <Translatable value="smortech-description" />
       </article>

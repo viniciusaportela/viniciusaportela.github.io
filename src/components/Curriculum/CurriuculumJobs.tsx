@@ -22,19 +22,18 @@ export const CurriculumJobs = () => {
       return sum + diffMonths;
     }, 0);
 
-    return `${(months / 12).toFixed(1)} `;
+    return `${Math.round(months / 12)} `;
   };
 
   return (
     <section>
-      <TranslatableTextWithIcon
-        icon={Briefcase}
-        size="lg"
-        className="mb-3"
+      <Translatable
         value="professional-experience"
+        className="mb-3 text-2xl font-bold"
+        component="h2"
       />
-      <i className="flex -mt-4 mb-3 gap-1 ml-9">
-        {"4 "}
+      <i className="flex -mt-4 mb-3 gap-1">
+        {calculateJobTime()}
         <Translatable value="experience-time" component="i" />
       </i>
       <Timeline>
