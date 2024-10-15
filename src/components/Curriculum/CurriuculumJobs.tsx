@@ -3,9 +3,7 @@ import { TimelineJobHeader } from "../Timeline/TimelineJobHeader";
 import { Month } from "../../@types/month";
 import { Timeline } from "../Timeline/Timeline";
 import React from "react";
-import { Briefcase } from "@phosphor-icons/react";
 import { Translatable } from "../Translatable/Translatable";
-import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIcon";
 import { TimelineJobSkills } from "../Timeline/TimelineJobSkills";
 import { jobs } from "../../constants/jobs";
 
@@ -44,6 +42,7 @@ export const CurriculumJobs = () => {
           />
           <Translatable value="tem-statement-one" component="li" />
           <Translatable value="tem-statement-two" component="li" />
+          <Translatable value="tem-statement-three" component="li" />
           <TimelineJobSkills>
             React, React Native Web, Typescript, Tailwind, Styled Components,
             Jest
@@ -74,6 +73,7 @@ export const CurriculumJobs = () => {
             NestJS, Microservices, RabbitMQ, AntD, React, NodeJS, Python,
             Docker, MongoDB, MySQL, Redux
           </TimelineJobSkills>
+          <div className="hidden print:block h-32"></div>
         </TimelineItem>
         <TimelineItem>
           <TimelineJobHeader

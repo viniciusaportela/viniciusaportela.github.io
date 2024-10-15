@@ -2,45 +2,54 @@ import { Star } from "@phosphor-icons/react";
 import React from "react";
 import { TranslatableTextWithIcon } from "../TextWithIcon/TranslatableTextWithIcon";
 import { Translatable } from "../Translatable/Translatable";
+import { List } from "../List/List";
 
 export const CurriculumKnowledge = () => {
   return (
     <section className="mt-7">
-      <Translatable className="text-2xl font-bold" value="knowledge" />
-      <div className="flex flex-row mt-1">
-        <div className="flex-1 mr-2">
-          <h3 className="font-bold text-lg">Front</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <li>React</li>
-            <li>React Native</li>
-            <li>React Native Web</li>
-            <li>Tailwind</li>
-            <li>Material UI</li>
-            <li>Styled Components</li>
-            <li>React Context</li>
-            <li>Redux</li>
-            <li>NextJS</li>
-            <li>GraphQL</li>
-            <li>Web3</li>
-          </div>
-        </div>
-        <div className="flex-1 ml-2">
-          <h3 className="font-bold text-lg">Back</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <li>NodeJS</li>
-            <li>Typescript</li>
-            <li>NestJS</li>
-            <li>RabbitMQ</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Redis</li>
-            <li>PostgresSQL</li>
-            <li>Cloudflare Workers</li>
-            <li>Docker</li>
-            <li>AWS Lambda</li>
-            <li>Serverless framework</li>
-          </div>
-        </div>
+      <Translatable className="text-2xl mb-2 font-bold" value="knowledge" />
+      <div className="flex-1 mb-4 w-full">
+        <h3 className="text-xl mb-2">Front</h3>
+        <List
+          items={[
+            "React",
+            "React Native",
+            "React Native Web",
+            "Tailwind",
+            "Material UI",
+            "Styled Components",
+            "React Context",
+            "Redux",
+            "NextJS",
+            "GraphQL",
+            "Web3",
+            "Zustand",
+          ]}
+        />
+      </div>
+      <div className="flex-1">
+        <h3 className="text-xl mb-2">Back</h3>
+        <List
+          items={[
+            "NodeJS",
+            "Express.js",
+            "Typescript",
+            "NestJS",
+            "RabbitMQ",
+            "MongoDB",
+            "MySQL",
+            "Redis",
+            "PostgresSQL",
+            "Cloudflare Workers",
+            "Docker",
+            "AWS Lambda",
+            "Serverless framework",
+          ]}
+        />
+      </div>
+      <div className="hidden print:block h-12"></div>
+      <div className="p-2 bg-gray-100 -mx-2 mt-4 rounded-md">
+        <span>Others</span>: <b>Git, HTTP, Rest API, Unit Testing, Agile</b>
       </div>
     </section>
   );

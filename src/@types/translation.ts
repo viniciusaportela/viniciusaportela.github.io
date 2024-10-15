@@ -7,6 +7,7 @@ export interface Translation {
   ["start-date"]: string;
   ["tem-statement-one"]: string;
   ["tem-statement-two"]: string;
+  ["tem-statement-three"]: string;
   ["regera-statement-one"]: string;
   ["regera-statement-two"]: string;
   ["regera-statement-three"]: string;

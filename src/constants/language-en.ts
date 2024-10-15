@@ -10,6 +10,8 @@ const translation: Translation = {
   ["tem-statement-one"]: "React Native Web rebranding following Figma Design",
   ["tem-statement-two"]:
     "Development of a Design System using Styled Components",
+  ["tem-statement-three"]:
+    "Refactor of authentication logic on the app which provided more development speed and less bugs",
   ["regera-statement-one"]:
     "Maintenance of services using Serverless Framework",
   ["regera-statement-two"]:
@@ -45,7 +47,7 @@ const translation: Translation = {
   ["level"]: "Level",
   ["education-one"]: "IT Technician",
   ["education-two"]: "Bachelor of Information Systems",
-  ["in-progress"]: "in progress",
+  ["in-progress"]: "In progress",
   ["courses"]: "Courses",
   ["course-one"]: "Advanced English II - Senac (200h)",
   ["course-two"]: "Javascript Expert",
@@ -54,7 +56,7 @@ const translation: Translation = {
   ["course-five"]: "Serverless Applications in AWS (Erick Wendel)",
   ["footer"]:
     "This curriculum was made with ReactJS/Tailwind. Code available at:",
-  ["professional-level"]: "Mid-Level FullStack Software Engineer",
+  ["professional-level"]: "FullStack Software Engineer",
   ["experience-time"]: "Years of experience",
 };
 

@@ -14,7 +14,8 @@ export const CurriculumEducation = () => {
         <TimelineItem>
           <span>
             <Translatable value="level" />:{" "}
-            <Translatable value="education-two" component="strong" /> - UFSC (
+            <Translatable value="education-two" component="strong" /> - PUC
+            Minas (
             <Translatable value="in-progress" />)
           </span>
         </TimelineItem>

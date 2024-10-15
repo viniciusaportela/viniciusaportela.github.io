@@ -11,6 +11,8 @@ const translation: Translation = {
     "Rebranding de aplicativo React Native Web seguindo Design no Figma",
   ["tem-statement-two"]:
     "Desenvolvimento de Design System usando Styled Components",
+  ["tem-statement-three"]:
+    "Refatoração do fluxo de autenticação em aplicativo que permitiu maior velocidade de desenvolvimento e menos bugs",
   ["regera-statement-one"]:
     "Manutenção de serviços usando o Serverless Framework",
   ["regera-statement-two"]:
@@ -55,7 +57,7 @@ const translation: Translation = {
   ["course-five"]: "Aplicações Serverless na AWS (14h)",
   ["footer"]:
     "Currículo desenvolvido em ReactJS/Tailwind. Código disponível em:",
-  ["professional-level"]: "Sênior FullStack Software Engineer",
+  ["professional-level"]: "FullStack Software Engineer",
   ["experience-time"]: "Anos de experiência",
 };
 

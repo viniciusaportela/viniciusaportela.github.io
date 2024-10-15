@@ -13,7 +13,7 @@ import { LanguageSwitch } from "./components/LanguageSwitch/LanguageSwitch";
 
 function App() {
   const { setLanguage } = useLanguage();
-  const [langParam] = useQueryParam("lang", "pt");
+  const [langParam] = useQueryParam("lang", "en");
 
   useLayoutEffect(() => {
     if (langParam) {
@@ -28,7 +28,7 @@ function App() {
       <div className="relative max-w-[880px] flex items-center w-[96%]">
         <LanguageSwitch className="absolute right-0 top-3" />
         <Translatable
-          className="font-parisienne text-gray-400 text-2xl my-8 mx-auto"
+          className="text-gray-400 text-2xl my-8 mx-auto italic font-light"
           value="curriculum"
         />
       </div>
