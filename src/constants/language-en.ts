@@ -58,6 +58,12 @@ const translation: Translation = {
     "This curriculum was made with ReactJS/Tailwind. Code available at:",
   ["professional-level"]: "FullStack Software Engineer",
   ["experience-time"]: "Years of experience",
+  ["baires-statement-one"]:
+    "Development of entire frontend MVP with Next.js for an american insurance company",
+  ["baires-statement-two"]:
+    "Development of config-driven form with React and complex business logic",
+  ["baires-statement-three"]:
+    "Integration with Socotra API for quote management",
 };
 
 export default translation;

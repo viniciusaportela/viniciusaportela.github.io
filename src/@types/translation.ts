@@ -16,6 +16,9 @@ export interface Translation {
   ["rankmyapp-statement-one"]: string;
   ["rankmyapp-statement-two"]: string;
   ["rankmyapp-statement-three"]: string;
+  ["baires-statement-one"]: string;
+  ["baires-statement-two"]: string;
+  ["baires-statement-three"]: string;
   ["adireto-statement-one"]: string;
   ["adireto-statement-two"]: string;
   ["adireto-statement-three"]: string;
