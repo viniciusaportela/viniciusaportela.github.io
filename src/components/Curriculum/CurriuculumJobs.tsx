@@ -6,21 +6,20 @@ import React from "react";
 import { Translatable } from "../Translatable/Translatable";
 import { TimelineJobSkills } from "../Timeline/TimelineJobSkills";
 import { jobs } from "../../constants/jobs";
+import dayjs from "dayjs";
 
 export const CurriculumJobs = () => {
   const calculateJobTime = () => {
     const months = jobs.reduce((sum, job) => {
-      const startDate = job.from;
-      const endDate = job.to ?? new Date();
+      const startDate = dayjs(job.from);
+      const endDate = dayjs(job.to ?? new Date());
 
-      const diffTime = Math.abs(endDate.getTime() - startDate.getTime());
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      const diffMonths = Math.ceil(diffDays / 30);
+      const months = endDate.diff(startDate, "month");
 
-      return sum + diffMonths;
+      return sum + months;
     }, 0);
 
-    return `${Math.round(months / 12)} `;
+    return `${Math.round(months / 12)}`;
   };
 
   return (

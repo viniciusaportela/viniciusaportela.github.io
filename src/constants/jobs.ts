@@ -24,6 +24,11 @@ export const jobs = [
   {
     // Tem Saúde
     from: new Date(2023, Month.AUGUST),
+    to: new Date(2024, Month.SEPTEMBER),
+  },
+  {
+    // BairesDev
+    from: new Date(2024, Month.OCTOBER),
     to: null,
   },
 ];
