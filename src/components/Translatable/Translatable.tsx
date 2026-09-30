@@ -1,6 +1,7 @@
 import React from "react";
 import enJson from "../../constants/language-en";
 import ptJson from "../../constants/language-pt";
+import esJson from "../../constants/language-es";
 import { useLanguage } from "../../context/LanguageContext";
 import { Translation } from "../../@types/translation";
 import { HTMLTag } from "../../@types/html-tag";
@@ -24,6 +25,8 @@ export const Translatable: React.FC<TranslatableProps> = ({
         return enJson[value as keyof typeof enJson];
       case "pt":
         return ptJson[value as keyof typeof ptJson];
+      case "es":
+        return esJson[value as keyof typeof esJson];
       default:
         return value;
     }

@@ -9,6 +9,7 @@ import {
 export enum Language {
   PT = "pt",
   EN = "en",
+  ES = "es",
 }
 
 interface LanguageContextInterface {

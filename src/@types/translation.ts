@@ -19,6 +19,9 @@ export interface Translation {
   ["baires-statement-one"]: string;
   ["baires-statement-two"]: string;
   ["baires-statement-three"]: string;
+  ["edvisor-statement-one"]: string;
+  ["edvisor-statement-two"]: string;
+  ["edvisor-statement-three"]: string;
   ["adireto-statement-one"]: string;
   ["adireto-statement-two"]: string;
   ["adireto-statement-three"]: string;
@@ -42,4 +45,6 @@ export interface Translation {
   ["footer"]: string;
   ["professional-level"]: string;
   ["experience-time"]: string;
+  ["others"]: string;
+  ["soft-skills-title"]: string;
 }

@@ -39,7 +39,7 @@ export const CurriculumKnowledge = () => {
             "MongoDB",
             "MySQL",
             "Redis",
-            "PostgresSQL",
+            "PostgreSQL",
             "Cloudflare Workers",
             "Docker",
             "AWS Lambda",
@@ -49,7 +49,8 @@ export const CurriculumKnowledge = () => {
       </div>
       <div className="hidden print:block h-12"></div>
       <div className="p-2 bg-gray-100 -mx-2 mt-4 rounded-md">
-        <span>Others</span>: <b>Git, HTTP, Rest API, Unit Testing, Agile</b>
+        <Translatable value="others" />:{" "}
+        <b>Git, HTTP, Rest API, Unit Testing, Agile</b>
       </div>
     </section>
   );

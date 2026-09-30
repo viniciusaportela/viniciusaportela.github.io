@@ -29,6 +29,11 @@ export const jobs = [
   {
     // BairesDev
     from: new Date(2024, Month.OCTOBER),
+    to: new Date(2025, Month.OCTOBER),
+  },
+  {
+    // Edvisor
+    from: new Date(2025, Month.OCTOBER, 27),
     to: null,
   },
 ];

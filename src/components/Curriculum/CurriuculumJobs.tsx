@@ -36,6 +36,18 @@ export const CurriculumJobs = () => {
       <Timeline>
         <TimelineItem>
           <TimelineJobHeader
+            name="Edvisor"
+            startDate={new Date(2025, Month.OCTOBER, 27)}
+          />
+          <Translatable value="edvisor-statement-one" component="li" />
+          <Translatable value="edvisor-statement-two" component="li" />
+          <Translatable value="edvisor-statement-three" component="li" />
+          <TimelineJobSkills>
+            Angular, React, NestJS, Node.js, Typescript, AWS, Claude
+          </TimelineJobSkills>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineJobHeader
             name="BairesDev"
             startDate={new Date(2024, Month.OCTOBER)}
           />
@@ -108,7 +120,7 @@ export const CurriculumJobs = () => {
           <Translatable value="freelancer-statement-two" component="li" />
           <TimelineJobSkills>
             Node.js, PostgreSQL, React, React Native, Next.js, Digital Ocean,
-            Puppeeteer, Electron.js, Firebase
+            Puppeteer, Electron.js, Firebase
           </TimelineJobSkills>
         </TimelineItem>
       </Timeline>
